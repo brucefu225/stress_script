@@ -69,7 +69,13 @@ deviceDetect (){
 	NET_Detect_multi_command_info.sh                        
 	HDD_Detect_multi_command_info.sh  
 	PSU_Detect_multi_command_info.sh
-	USB_Detect_multi_command_info.sh
+	USB_Detect_multi_command_info.sh (){
+		#暫存檔
+		DEVCOUNT ##計算USB個數
+		> usbadd1.txt
+        > usbadd2.txt
+        > usbadd3.txt
+	}
 		usb1.sh-bak
 	VGA_Detect_multi_command_info.sh
 		VGA_resolution_8.sh
